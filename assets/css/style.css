@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-button {
+    height: 360px; 
+    width: 884px; 
+    background-color: #c3c5cc; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto !important;
+    padding: 10px !important;
+    /* color: #7c7c7c; */
+}
+
+.button-keyboard {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 11px;
+    /* font-size: 1em; */
+    color: #7c7c7c;
+    border: 2px solid #5b5d62 !important;
+}
+
+.btn-esc {
+    width: 70px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.btn-delete {
+    width: 70px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.btn-tab {
+    width: 70px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.btn-caps-lock {
+    width: 90px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.btn-return {
+    width: 90px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.btn-shift {
+    width: 120px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.btn-space-bar {
+    width: 250px; 
+    height: 50px; 
+    border-radius: 10px; 
+    margin: 3px;
+    font-size: 10px;
+}
+
+.contentText {
+    font-size: 12px;
+    border: dotted 3px rgb(35, 12, 138);
+    border-radius: 10px;
+    min-height: 60px;
+    max-width: 860px;
+    min-width: 860px;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+}

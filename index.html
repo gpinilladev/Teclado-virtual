@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- ********** START - Inicio documento html ********** -->
+<html lang="en">
+<!-- ********** START - Head o cabecera de el documento html ********** -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  -->
+    <title>Teclado JavaScript - Bootstrap</title>
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+<!-- *********** END - Head o cabecera de el documento html *********** -->
+<body>
+	<main class="container-fluid">
+		<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<h1 class="display-4">Teclado JavaScript y Bootstrap</h1>
+			<p class="lead">
+                Bienvenidos a el teclado virtual de JavaScript y Bootstrap, en el puede ingresar el texto que desees y en la parte superior aparecera en el recuadro punteado de color azul.
+            </p>
+		</div>
+		<div class="pricing-header pb-md-4 mx-auto text-center">
+			<h5>Texto ingresado por el teclado virtual: </h5>
+			<p id="contentText" class="lead contentText"></p>
+		</div>
+        <!-- ***** START - Card contenedora de letras ***** -->
+        <div class="row m-3 content-button">
+            <div class="content-first-line m-0 p-0">
+                <button id="btnEsc" class="button-keyboard btn-esc">esc</button>
+                <button id="btnF1" class="button-keyboard">F1</button>
+                <button id="btnF2" class="button-keyboard">F2</button>
+                <button id="btnF3" class="button-keyboard">F3</button>
+                <button id="btnF4" class="button-keyboard">F4</button>
+                <button id="btnF5" class="button-keyboard">F5</button>
+                <button id="btnF6" class="button-keyboard">F6</button>
+                <button id="btnF7" class="button-keyboard">F7</button>
+                <button id="btnF8" class="button-keyboard">F8</button>
+                <button id="btnF9" class="button-keyboard">F9</button>
+                <button id="btnF10" class="button-keyboard">F10</button>
+                <button id="btnF11" class="button-keyboard">F11</button>
+                <button id="btnF12" class="button-keyboard">F12</button>
+                <button id="btnEject" class="button-keyboard">Eject</button>
+            </div>
+            <div class="content-second-line m-0 p-0">
+                <button id="btnSignVirgulilla" class="button-keyboard">~</button>
+                <button id="btnNum1" class="button-keyboard">1</button>
+                <button id="btnNum2" class="button-keyboard">2</button>
+                <button id="btnNum3" class="button-keyboard">3</button>
+                <button id="btnNum4" class="button-keyboard">4</button>
+                <button id="btnNum5" class="button-keyboard">5</button>
+                <button id="btnNum6" class="button-keyboard">6</button>
+                <button id="btnNum7" class="button-keyboard">7</button>
+                <button id="btnNum8" class="button-keyboard">8</button>
+                <button id="btnNum9" class="button-keyboard">9</button>
+                <button id="btnNum0" class="button-keyboard">0</button>
+                <button id="btnSignRest" class="button-keyboard">-</button>
+                <button id="btnSignSum" class="button-keyboard">+</button>
+                <button id="btnDelete" class="button-keyboard btn-delete">Delete</button>
+            </div>
+            <div class="content-third-line m-0 p-0">
+                <button id="btnTab" class="button-keyboard btn-tab">Tab</button>
+                <button id="btnLetterQ" class="button-keyboard">Q</button>
+                <button id="btnLetterW" class="button-keyboard">W</button>
+                <button id="btnLetterE" class="button-keyboard">E</button>
+                <button id="btnLetterR" class="button-keyboard">R</button>
+                <button id="btnLetterT" class="button-keyboard">T</button>
+                <button id="btnLetterY" class="button-keyboard">Y</button>
+                <button id="btnLetterU" class="button-keyboard">U</button>
+                <button id="btnLetterI" class="button-keyboard">I</button>
+                <button id="btnLetterO" class="button-keyboard">O</button>
+                <button id="btnLetterP" class="button-keyboard">P</button>
+                <button id="btnSignOpenCurlyBrackets" class="button-keyboard">{</button>
+                <button id="btnSignCloseCurlyBrackets" class="button-keyboard">}</button>
+                <button id="btnSignPipeLine" class="button-keyboard">|</button>
+            </div>
+            <div class="content-fouth-line m-0 p-0">
+                <button id="btnCapsLock" class="button-keyboard btn-caps-lock">
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                        <div>caps lock</div>
+                        <div>
+                            <div id="light-turn-on" style="display: none; width: 8px; height: 8px; background-color: greenyellow; border-radius: 10px; border: 0.5px solid #88b430;"></div>
+                            <div id="light-turn-off" style="display: block; width: 8px; height: 8px; background-color: #bfbfbf; border-radius: 10px; border: 0.5px solid #9d9d9d;"></div>
+                        </div>
+                    </div>
+                </button>
+                <button id="btnLetterA" class="button-keyboard">A</button>
+                <button id="btnLetterS" class="button-keyboard">S</button>
+                <button id="btnLetterD" class="button-keyboard">D</button>
+                <button id="btnLetterF" class="button-keyboard">F</button>
+                <button id="btnLetterG" class="button-keyboard">G</button>
+                <button id="btnLetterH" class="button-keyboard">H</button>
+                <button id="btnLetterJ" class="button-keyboard">J</button>
+                <button id="btnLetterK" class="button-keyboard">K</button>
+                <button id="btnLetterL" class="button-keyboard">L</button>
+                <button id="btnSignDot" class="button-keyboard">.</button>
+                <button id="btnSignComma" class="button-keyboard">,</button>
+                <button id="btnReturn" class="button-keyboard btn-return">return</button>
+            </div>
+            <div class="content-fifth-line m-0 p-0">
+                <button id="btnShift1" class="button-keyboard btn-shift">shift</button>
+                <button id="btnLetterZ" class="button-keyboard">Z</button>
+                <button id="btnLetterX" class="button-keyboard">X</button>
+                <button id="btnLetterC" class="button-keyboard">C</button>
+                <button id="btnLetterV" class="button-keyboard">V</button>
+                <button id="btnLetterB" class="button-keyboard">B</button>
+                <button id="btnLetterN" class="button-keyboard">N</button>
+                <button id="btnLetterM" class="button-keyboard">M</button>
+                <button id="btnSignGreaterThan" class="button-keyboard">></button>
+                <button id="btnSignLessThan" class="button-keyboard"><</button>
+                <button id="btnSignInter" class="button-keyboard">?</button>
+                <button id="btnShift2" class="button-keyboard btn-shift">shift</button>
+            </div>
+            <div class="content-sixth-line m-0 p-0">
+                <button id="btnFuncfn" class="button-keyboard">fn</button>
+                <button id="btnFuncControl1" class="button-keyboard">control</button>
+                <button id="btnFuncOption1" class="button-keyboard">option</button>
+                <button id="btnFuncCommand1" class="button-keyboard">
+                    <!-- ⌘ -->
+                    <span style="font-size: 0.7em;">Command</span>
+                    <!-- <div style="display: flex; flex-direction: column;">
+                        <div>
+                            ⌘
+                        </div>
+                        <div>
+                            <span style="font-size: 0.7em;">Command</span>
+                        </div>
+                    </div> -->
+                    <!-- <div style="position: relative;">
+                        <span style="font-size: 13px; font-weight: 400; position: absolute;">⌘</span>
+                        <span style="font-size: 0.7em; position: absolute; left: 5px; bottom: -8px;">command</span>
+                    </div> -->
+                </button>
+                <button id="btnSpaceBar" class="button-keyboard btn-space-bar">&nbsp;</button>
+                <button id="btnFuncCommand2" class="button-keyboard">command</button>
+                <button id="btnFuncOption2" class="button-keyboard">option</button>
+                <button id="btnFuncleft" class="button-keyboard">left</button>
+                <button id="btnFuncup" class="button-keyboard">up</button>
+                <button id="btnFuncdown" class="button-keyboard">down</button>
+                <button id="btnFuncright" class="button-keyboard">right</button>
+            </div>
+        </div>
+        <!-- ***** END - Card contenedora de letras ***** -->
+
+		<footer class="pt-4 my-md-5 pt-md-5 border-top">
+			<div class="row">
+				<div class="col-12 col-md">
+                    <!-- <p>Reto profesor <strong>Andres Sanchez</strong> - Reto Sanchezcode Challenge</p>
+                    <p>
+                        Alumno desarrollador: <strong>German Pinilla</strong>
+                    </p> -->
+                    <small class="d-block mb-3 text-muted">&copy; 2023</small>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- ********** START - Scripts de la pagina ********** -->
+    <!-- ******* START - Custom scripts ******* -->
+    <script src="./assets/js/script.js"></script>
+    <!-- ******* END - Custom scripts ******* -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- *********** END - Scripts de la pagina *********** -->
+</body>
+</html>
+<!-- *********** END - Fin documento html *********** -->
