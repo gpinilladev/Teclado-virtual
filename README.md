@@ -13,7 +13,7 @@ Con un teclado virtual se puede introducir contraseñas en sitios web, aplicacio
 ##### 📸 Captura de pantalla:
 ![alt text](https://live.staticflickr.com/65535/52781767547_85b06ef0a8_o.png)
 
-### [Demo](https://gpinilladev.github.io/teclado-virtual/)
+### [Demo](https://gpinilladev.github.io/Teclado-virtual/)
 
 ## ⚖️ License
 
