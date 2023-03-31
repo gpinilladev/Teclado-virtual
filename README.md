@@ -15,8 +15,6 @@ Con un teclado virtual se puede introducir contraseñas en sitios web, aplicacio
 
 ### [Demo](https://gpinilladev.github.io/teclado-virtual/)
 
-___
-
 ## ⚖️ License
 
 [MIT](LICENSE.txt) license.
